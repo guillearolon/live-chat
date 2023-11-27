@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Live</title>
+</head>
+<body>
+    <h1>Sala de Chat</h1>
+    <!--Formulario-->
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+
+    <label for="chat">Chat</label>
+    <input type="text" id="chat" placeholder="Escribe un mensaje" required>
+
+    <button id="envio" type="submit">Enviar</button>
+    <!--Formulario Fin-->
+
+    <!--Listado de lo ingresado-->
+    <ul id="resultado"></ul>
+
+    <!--SocketIO-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--Relación index.js-->
+    <script src="{url_for('static', filename=)}></script>
+</body>
+</html>
